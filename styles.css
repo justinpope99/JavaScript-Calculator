@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center; /* This aligns horizontally */
+    align-items: center; /* This aligns vertically */
+    height: 100vh;
+    background-color: hsl(0, 0%, 95%);
+}
+
+#calculator {
+    font-family: Arial, sans-serif;
+    background-color: hsl(0, 0%, 15%);
+    border-radius: 15px;
+    max-width: 500px;
+    overflow: hidden; /* This will keep the elements from overflowing for the display if we have a very long equation. */
+}
+
+#display {
+    width: 100%;
+    padding: 20px;
+    font-size: 5rem;
+    text-align: left;
+    border: none;
+    background-color: hsl(0, 0%, 20%);
+    color: white;
+}
+
+#keys {
+    display: grid;
+    /* The repeat function will repeat the process for each row.
+    The 4 represents the number of columns per row.
+    1fr is the spacing between the columns to arrange them evenly.
+    fr stands for fractional unit
+    1fr indicates that each column should take up an even amount of space.*/
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px; /* This is the gap between each of the rows. */
+    padding: 25px; /* This is the padding around the keys.*/
+}
+
+button {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: none;
+    background-color: hsl(0, 0%, 30%);
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer; /* This makes it so that your cursor will become a pointer when you hover over the button. */
+}
+
+button:hover {
+    background-color: hsl(0, 0%, 40%);
+}
+
+button:active {
+    background-color: hsl(0, 0%, 50%);
+}
+
+.operator-btn {
+    background-color: hsl(35, 100%, 55%);
+}
+
+.operator-btn:hover {
+    background-color: hsl(35, 100%, 65%);
+}
+
+.operator-btn:active {
+    background-color: hsl(35, 100%, 75%);
+}
