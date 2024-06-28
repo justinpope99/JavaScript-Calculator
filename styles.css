@@ -1,10 +1,9 @@
-body {
-    margin: 0;
+.calculator-body {
+    margin-top: 50px;
     display: flex;
     justify-content: center; /* This aligns horizontally */
     align-items: center; /* This aligns vertically */
-    height: 100vh;
-    background-color: hsl(0, 0%, 95%);
+    height: 800px;
 }
 
 #calculator {
@@ -12,6 +11,7 @@ body {
     background-color: hsl(0, 0%, 15%);
     border-radius: 15px;
     max-width: 500px;
+    min-width: 500px;
     overflow: hidden; /* This will keep the elements from overflowing for the display if we have a very long equation. */
 }
 
@@ -67,4 +67,133 @@ button:active {
 
 .operator-btn:active {
     background-color: hsl(35, 100%, 75%);
+}
+
+/* .back-arrow {
+    font-size: 60px;
+} */
+
+.delete-btn img {
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+.color-btn {
+    background-color: hsl(180, 100%, 55%);
+}
+
+.color-btn:hover {
+    background-color: hsl(180, 100%, 65%);
+}
+
+.color-btn:active {
+    background-color: hsl(180, 100%, 75%);
+}
+
+.display-color-btn {
+    background-color: hsl(108, 77%, 55%);
+    padding-top: 10px;
+}
+
+.display-color-btn:hover {
+    background-color: hsl(108, 77%, 65%);
+}
+
+.display-color-btn:active {
+    background-color: hsl(108, 77%, 75%);
+}
+
+.display-color-btn img {
+    width: 70px;
+    height: 70px;
+}
+
+.reset-btn {
+    background-color: hsl(6, 89%, 55%);
+    padding-top: 10px;
+}
+
+.reset-btn:hover {
+    background-color: hsl(6, 89%, 65%);
+}
+
+.reset-btn:active {
+    background-color: hsl(6, 89%, 75%);
+}
+
+.equal-btn {
+    background-color: hsl(145, 81%, 55%);
+    padding-left: 12px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+.equal-btn:hover {
+    background-color: hsl(145, 81%, 65%);
+}
+
+.equal-btn:active {
+    background-color: hsl(145, 81%, 75%);
+}
+
+.divide-btn {
+    background-color: hsl(202, 81%, 55%);
+    padding-top: 10px;
+}
+
+.divide-btn:hover {
+    background-color: hsl(202, 81%, 65%);
+}
+
+.divide-btn:active {
+    background-color: hsl(202, 81%, 75%);
+}
+
+.multiply-btn {
+    background-color: hsl(163, 61%, 78%);
+    padding-top: 10px;
+}
+
+.multiply-btn:hover {
+    background-color: hsl(163, 61%, 88%);
+}
+
+.multiply-btn:active {
+    background-color: hsl(163, 61%, 98%);
+}
+
+.minus-btn {
+    background-color: hsl(204, 56%, 31%);
+    padding-top: 10px;
+}
+
+.minus-btn:hover {
+    background-color: hsl(204, 56%, 41%);
+}
+
+.minus-btn:active {
+    background-color: hsl(204, 56%, 51%);
+}
+.plus-btn {
+    background-color: hsl(77, 78%, 55%);
+    padding-top: 10px;
+}
+
+.plus-btn:hover {
+    background-color: hsl(77, 78%, 65%);
+}
+
+.plus-btn:active {
+    background-color: hsl(77, 78%, 75%);
+}
+
+
+li {
+    list-style: square;
+}
+
+.sources {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
