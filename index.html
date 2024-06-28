@@ -7,27 +7,149 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div id="calculator">
-      <input type="text" id="display" readonly />
-      <div id="keys">
-        <button onclick="appendToDisplay('+')" class="operator-btn">+</button>
-        <button onclick="appendToDisplay('7')">7</button>
-        <button onclick="appendToDisplay('8')">8</button>
-        <button onclick="appendToDisplay('9')">9</button>
-        <button onclick="appendToDisplay('-')" class="operator-btn">-</button>
-        <button onclick="appendToDisplay('4')">4</button>
-        <button onclick="appendToDisplay('5')">5</button>
-        <button onclick="appendToDisplay('6')">6</button>
-        <button onclick="appendToDisplay('*')" class="operator-btn">*</button>
-        <button onclick="appendToDisplay('1')">1</button>
-        <button onclick="appendToDisplay('2')">2</button>
-        <button onclick="appendToDisplay('3')">3</button>
-        <button onclick="appendToDisplay('/')" class="operator-btn">/</button>
-        <button onclick="appendToDisplay('0')">0</button>
-        <button onclick="appendToDisplay('.')">.</button>
-        <button onclick="calculate()">=</button>
-        <button onclick="clearDisplay()" class="operator-btn">C</button>
+    <div class="calculator-body">
+      <div id="calculator">
+        <input type="text" id="display" readonly />
+        <div id="keys">
+          <button onclick="appendToDisplay('+')" class="operator-btn plus-btn">
+            <div class="">
+              <img src="images/plus.png" alt="" srcset="" />
+            </div>
+          </button>
+          <button onclick="appendToDisplay('7')">7</button>
+          <button onclick="appendToDisplay('8')">8</button>
+          <button onclick="appendToDisplay('9')">9</button>
+          <button onclick="appendToDisplay('-')" class="operator-btn minus-btn">
+            <div class="">
+              <img src="images/minus.png" alt="" srcset="" />
+            </div>
+          </button>
+          <button onclick="appendToDisplay('4')">4</button>
+          <button onclick="appendToDisplay('5')">5</button>
+          <button onclick="appendToDisplay('6')">6</button>
+          <button
+            onclick="appendToDisplay('*')"
+            class="operator-btn multiply-btn"
+          >
+            <div class="">
+              <img src="images/multiply.png" alt="" srcset="" />
+            </div>
+          </button>
+          <button onclick="appendToDisplay('1')">1</button>
+          <button onclick="appendToDisplay('2')">2</button>
+          <button onclick="appendToDisplay('3')">3</button>
+          <button
+            onclick="appendToDisplay('/')"
+            class="operator-btn divide-btn"
+          >
+            <div class="">
+              <img src="images/divide.png" alt="" srcset="" />
+            </div>
+          </button>
+          <button onclick="appendToDisplay('0')">0</button>
+          <button onclick="appendToDisplay('.')">.</button>
+          <button class="equal-btn" onclick="calculate()">
+            <div class="">
+              <img src="images/equal.png" alt="" srcset="" />
+            </div>
+          </button>
+          <button onclick="clearDisplay()" class="operator-btn">C</button>
+          <button onclick="deleteValue()" class="operator-btn">
+            <div class="delete-btn">
+              <img src="images/delete.png" alt="" srcset="" />
+            </div>
+          </button>
+          <button onclick="appendToDisplay('(')">(</button>
+          <button onclick="appendToDisplay(')')">)</button>
+          <button onclick="calculatePercent()" class="operator-btn">%</button>
+          <button onclick="changeDisplayColor()" class="display-color-btn">
+            <div>
+              <img src="images/cmyk.png" alt="" srcset="" />
+            </div>
+          </button>
+          <button onclick="changeColors()" class="color-btn">
+            <div>
+              <img src="images/intersection.png" alt="" srcset="" />
+            </div>
+          </button>
+          <button onclick="reset()" class="reset-btn">
+            <div>
+              <img src="images/reset.png" alt="" srcset="" />
+            </div>
+          </button>
+        </div>
       </div>
+    </div>
+    <br />
+    <div class="sources">
+      <h3>Sources for the Icons used</h3>
+    </div>
+    <div class="sources">
+      <ul>
+        <li>
+          <a
+            href="https://www.flaticon.com/free-icons/delete"
+            title="delete icons"
+            >Delete icons created by Pixel perfect - Flaticon</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.flaticon.com/free-icons/union"
+            title="union icons"
+            >Union icons created by iconixar - Flaticon</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.flaticon.com/free-icons/combo"
+            title="combo icons"
+            >Combo icons created by AbtoCreative - Flaticon</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.flaticon.com/free-icons/reset"
+            title="reset icons"
+            >Reset icons created by Freepik - Flaticon</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.flaticon.com/free-icons/google-plus"
+            title="google plus icons"
+            >Google plus icons created by Pixel perfect - Flaticon</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.flaticon.com/free-icons/subtraction"
+            title="subtraction icons"
+            >Subtraction icons created by Fathema Khanom - Flaticon</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.flaticon.com/free-icons/divide"
+            title="divide icons"
+            >Divide icons created by IYIKON - Flaticon</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.flaticon.com/free-icons/close"
+            title="close icons"
+            >Close icons created by Pixel perfect - Flaticon</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.flaticon.com/free-icons/equality"
+            title="equality icons"
+            >Equality icons created by Smashicons - Flaticon</a
+          >
+        </li>
+      </ul>
     </div>
     <script src="script.js"></script>
   </body>
